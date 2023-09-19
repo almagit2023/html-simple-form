@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formHeading">
+        <h1>SIMPLE WEB FORM</h1>
+    </div>
+    <form action="/" method="post">
+        <h3>Please Fill Out The Details Below</h3><br>
+        <hr style="background:rgb(238, 233, 233);margin-bottom:15px;">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" required>
+            </li>
+            <li>
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="user_phone" placeholder="5102200521" required>
+            </li>
+            <li>
+                <label for="addr">Address</label>
+                <input type="text" id="addr" name="user_address" required>
+            </li>
+            <li>
+                <label for="qualification">Qualification:</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">Select</option>
+                    <option value="BS">Bachelors in Science</option>
+                    <option value="MS">Masters in Science</option>
+                    <option value="phD">Doctorate</option>
+                    <option value="Diploma">High School Graduate</option>
+                </select>
+            </li>
+            <li>
+                <label for=""><b> Gender :</b> </label>               
+                Male<input type="radio" id="male" name="gender" value="male">
+                Female<input type="radio" id="female" name="gender" value="female">
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" required></textarea>
+            </li>
+
+             <li class="agreementBox">
+                <input type="checkbox" id="agreement" name="agreement" value="agreement" required>
+                <label for="agreement" class="agreementText"> I agree to submit</label>
+             </li>
+             <hr>
+            <li class="button">
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
